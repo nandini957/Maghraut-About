@@ -1,0 +1,112 @@
+import React from 'react';
+
+// Maghraut About Page - React + Tailwind single-file component
+// - Uses Tailwind classes (no imports required here)
+// - Replace placeholder images/links with real assets if desired
+
+export default function MaghrautAbout() {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-900">
+      {/* Header / Nav */}
+      <header className="bg-white shadow-sm">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-md flex items-center justify-center text-white font-bold">M</div>
+            <h1 className="text-xl font-semibold">Maghraut Technologies</h1>
+          </div>
+
+          <nav className="hidden md:flex items-center gap-6 text-sm">
+            <a href="/" className="hover:text-indigo-600">Home</a>
+            <a href="/services" className="hover:text-indigo-600">Services</a>
+            <a href="/about" className="text-indigo-600 font-medium">About</a>
+            <a href="/blog" className="hover:text-indigo-600">Blog</a>
+            <a href="/contact" className="px-4 py-2 bg-indigo-600 text-white rounded-md text-sm">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero / Intro */}
+      <main className="max-w-5xl mx-auto px-6 py-12">
+        <section className="bg-white rounded-2xl shadow p-8 lg:p-12">
+          <div className="grid gap-8 lg:grid-cols-3 lg:items-start">
+            <div className="lg:col-span-2">
+              <h2 className="text-3xl font-extrabold leading-tight">About Maghraut Technologies</h2>
+              <p className="mt-4 text-gray-700">Maghraut Technologies is a leading consulting and services firm specializing in data analytics, business process optimization, and Salesforce solutions. We empower organizations to drive innovation, enhance operational efficiency, and achieve sustainable growth by leveraging advanced technologies and industry best practices.</p>
+
+              <p className="mt-3 text-gray-700">Our team of seasoned professionals combines strategic insight, technical expertise, and practical experience to deliver tailored solutions that address the unique challenges of large enterprises and small-to-medium businesses (SMBs). From unlocking the power of data analytics and designing strategic data operations to reengineering core business processes and maximizing the potential of Salesforce platforms, we deliver measurable value at every stage of your digital transformation journey.</p>
+
+              <p className="mt-3 text-gray-700">At Maghraut Technologies, we partner with clients to build smarter, data-driven organizations capable of thriving in today’s fast-evolving business landscape.</p>
+            </div>
+
+            <aside className="flex flex-col items-center gap-4">
+              <img src="https://via.placeholder.com/220x220.png?text=Maghraut+Logo" alt="Maghraut logo" className="w-44 h-44 object-cover rounded-lg shadow" />
+              <a href="https://wa.me/917991989898" target="_blank" rel="noreferrer" className="inline-block px-4 py-2 border border-indigo-600 text-indigo-600 rounded-md text-sm">Let's Talk Salesforce!</a>
+            </aside>
+          </div>
+        </section>
+
+        {/* Pledge 1% */}
+        <section className="mt-8 bg-white rounded-2xl shadow p-8">
+          <h3 className="text-2xl font-bold">Upholds Commitment to Giving Back with Pledge 1% Partnership</h3>
+          <p className="mt-3 text-gray-700">A Small Pledge. A Bold Promise.</p>
+
+          <p className="mt-4 text-gray-700">At Maghraut Technologies, we’ve always believed that true innovation isn't just measured by the solutions we build—but by the lives we touch. When we first heard about the Pledge 1% movement at TDX Bangalore during a Salesforce event, it resonated deeply with our values. The idea is simple: commit 1% of equity, profit, product, or employee time to support causes that matter. But behind that simplicity lies a profound truth—small contributions, when made collectively, can create monumental impact.</p>
+
+          <p className="mt-3 text-gray-700">For us, it’s not just a pledge—it’s a philosophy. Whether it's empowering nonprofits with technology, enabling our team to volunteer their time, or offering pro bono services to organizations driving real change, we’re committed to using our capabilities for a purpose beyond profit.</p>
+
+          <p className="mt-3 text-gray-700">We’re proud to stand with a global community of companies that believe in giving back. Proud to be part of something bigger. Proud to be Maghraut—where technology meets compassion, and where every 1% is a step toward a better world.</p>
+
+          <div className="mt-6">
+            <a href="/contact" className="inline-block px-5 py-2 bg-indigo-600 text-white rounded-md">Join us on this journey</a>
+          </div>
+        </section>
+
+        {/* Collaboration / Founders Desk */}
+        <section className="mt-8 grid lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-2 bg-white rounded-2xl shadow p-6">
+            <h3 className="text-2xl font-bold">From the Founder’s Desk</h3>
+            <p className="mt-3 text-gray-700">At Maghraut Technologies, we believe in pushing boundaries and shaping a better digital future. Our journey began with a vision to empower organizations with cutting-edge solutions and personalized strategies.</p>
+
+            <p className="mt-3 text-gray-700">We’re committed to innovation, integrity, and impact. Thank you for trusting us — together, we’re building something extraordinary.</p>
+
+            <p className="mt-4 font-semibold">— Vijay Kumar Soni, CEO</p>
+          </div>
+
+          <aside className="bg-white rounded-2xl shadow p-6 flex flex-col gap-4">
+            <h4 className="font-semibold text-lg">Contact</h4>
+            <address className="not-italic text-gray-700 text-sm">
+              Maghraut Technologies Private Limited<br />
+              B hukhan, No-6/D-765, Sector 6, Gomti Nagar, Lucknow, Uttar Pradesh, India, 226010
+            </address>
+
+            <div className="text-sm">
+              <a href="mailto:info@maghraut.com" className="block hover:underline">info@maghraut.com</a>
+              <a href="https://wa.me/917991989898" className="block hover:underline">+91 79919 89898 (WhatsApp)</a>
+            </div>
+
+            <div className="flex gap-3 mt-2">
+              {/* Simple SVG icons for social links */}
+              <a href="#" aria-label="LinkedIn" className="p-2 rounded-md hover:bg-gray-100">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5C4.98 4.6 4.1 5.5 3 5.5 1.9 5.5 1 4.6 1 3.5 1 2.4 1.9 1.5 3 1.5 4.1 1.5 4.98 2.4 4.98 3.5zM.5 8.98h4.99V24H.5V8.98zM9.5 8.98h4.78v2.04h.07c.66-1.25 2.28-2.56 4.7-2.56 5.03 0 5.95 3.31 5.95 7.61V24h-4.99v-7.18c0-1.71-.03-3.91-2.38-3.91-2.38 0-2.74 1.86-2.74 3.79V24H9.5V8.98z" fill="currentColor"/></svg>
+              </a>
+
+              <a href="#" aria-label="Twitter" className="p-2 rounded-md hover:bg-gray-100">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.92c-.63.28-1.3.48-2.01.57.72-.43 1.27-1.12 1.53-1.94-.67.4-1.41.67-2.2.82A3.5 3.5 0 0016.1 4c-1.94 0-3.5 1.6-3.5 3.57 0 .28.03.56.09.83C9.7 8.22 6.5 6.4 4 3.75c-.31.5-.49 1.08-.49 1.71 0 1.17.6 2.2 1.52 2.8-.56-.02-1.08-.17-1.54-.42v.04c0 1.66 1.16 3.05 2.7 3.37-.28.07-.57.11-.87.11-.21 0-.42-.02-.62-.06.42 1.32 1.64 2.28 3.09 2.31A7.02 7.02 0 012 19.54 9.9 9.9 0 008.46 22c6.08 0 9.4-5.02 9.4-9.37v-.43c.65-.48 1.2-1.08 1.64-1.77-.6.27-1.24.45-1.9.54z" fill="currentColor"/></svg>
+              </a>
+
+              <a href="#" aria-label="Facebook" className="p-2 rounded-md hover:bg-gray-100">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34V21.9C18.34 21.13 22 16.99 22 12z" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </aside>
+        </section>
+
+        {/* Page footer small */}
+        <footer className="mt-10 text-center text-sm text-gray-500">
+          <p>Google Sites — Page updated</p>
+          <p className="mt-1">Report abuse</p>
+        </footer>
+      </main>
+    </div>
+  );
+}
